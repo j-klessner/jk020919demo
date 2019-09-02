@@ -10,7 +10,7 @@ body {
 .header {
   padding: 80px;
   text-align: center;
-  background: #1abc9c;
+  background: url(logo3.png);
   color: #fff;
 }
 
