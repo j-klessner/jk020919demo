@@ -6,3 +6,5 @@ metadata: https://www.w3schools.com/tags/tag_meta.asp
 
 colors - named, hex color code, rgb value: https://htmlcolorcodes.com/color-names/
 
+sass functions - color: https://www.w3schools.com/sass/sass_functions_color.asp
+

@@ -1,7 +1,8 @@
 $color1: #fff;
 $color2: #1abc9c;
-$size: 20px;
+$size: 10px;
 $screen: 100px;
+$flex: 10%;
 
 * {
     box-sizing: border-box;
@@ -13,14 +14,14 @@ body {
 }
 
 .header {
-    padding: $size*4;
+    padding: $size*8;
     text-align: center;
     background: $color2;
     color: $color1;
 }
 
 .header h1 {
-    font-size: $size*2;
+    font-size: $size*4;
 }
 
 .navbar {
@@ -32,6 +33,15 @@ body {
 }
 
 .navbar a {
+    float: left;
+    display: block;
+    color: $color1;
+    text-align: center;
+    padding: $size*1.4 $size*2;
+    text-decoration: none;
+}
+
+.navbar a.right {
     float: right;
 }
 
@@ -53,27 +63,27 @@ body {
 }
 
 .side {
-    -ms-flex: 30%;
-    flex: 30%;
+    -ms-flex: $flex*3;
+    flex: $flex*3;
     background: darken($color1, 5.5);
-    padding: $size;
+    padding: $size*2;
 }
 
 .main {
-    -ms-flex: 70%;
-    flex: 70%;
+    -ms-flex: $flex*7;
+    flex: $flex*7;
     background-color: $color1;
-    padding: $size;
+    padding: $size*2;
 }
 
 .fakeimg {
     background-color: darken($color1, 37.3);
     width: 100%;
-    padding: $size;
+    padding: $size*2;
 }
 
 .footer {
-    padding: 20px;
+    padding: $size;
     text-align: center;
     background: darken($color1, 18.6);
 }
