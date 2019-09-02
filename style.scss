@@ -76,9 +76,10 @@ body {
     padding: $size*2;
 }
 
-.fakeimg {
+.img {
     background-color: darken($color1, 37.3);
-    width: 100%;
+    width: $size*25;
+    height: $size*35;
     padding: $size*2;
 }
 
