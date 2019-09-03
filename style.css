@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial, Helvetica, sans-serif";
   margin: 0;
 }
 
@@ -13,7 +13,6 @@ body {
   background: url(logo3.png);
   color: #fff;
 }
-
 .header h1 {
   font-size: 40px;
 }
@@ -22,7 +21,6 @@ body {
   overflow: hidden;
   background-color: #303030;
 }
-
 .navbar a {
   float: left;
   display: block;
@@ -31,11 +29,9 @@ body {
   padding: 14px 20px;
   text-decoration: none;
 }
-
 .navbar a.right {
   float: right;
 }
-
 .navbar a:hover {
   background-color: #d0d0d0;
   color: black;

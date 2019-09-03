@@ -5,93 +5,95 @@ $color4: darken($color3, 18.6);
 $color5: darken($color4, 44);
 $color6: darken($color1, 100);
 $color7: #1abc9c;
+$font: "Arial, Helvetica, sans-serif";
 
 * {
     box-sizing: border-box;
-  }
+}
   
-  body {
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: $font;
     margin: 0;
-  }
+}
   
-  .header {
+.header {
     padding: 80px;
     text-align: center;
     background: url(logo3.png);
     color: $color1;
-  }
+    
+    h1 {
+        font-size: 40px;
+    }
+}
   
-  .header h1 {
-    font-size: 40px;
-  }
   
-  .navbar {
+.navbar {
     overflow: hidden;
     background-color: $color5;
-  }
+    
+    a {
+        float: left;
+        display: block;
+        color: $color1;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+    
+    a.right {
+        float: right;
+    }
+    
+    a:hover {
+        background-color: $color3;
+        color: $color6;
+    }
+}
   
-  .navbar a {
-    float: left;
-    display: block;
-    color: $color1;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-  }
-  
-  .navbar a.right {
-    float: right;
-  }
-  
-  .navbar a:hover {
-    background-color: $color3;
-    color: $color6;
-  }
-  
-  .row {  
+.row {  
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-  }
+}
   
-  .side {
+.side {
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
     background-color: $color2;
     padding: 20px;
-  }
+}
   
-  .main {   
+.main {   
     -ms-flex: 70%; /* IE10 */
     flex: 70%;
     background-color: $color1;
     padding: 20px;
-  }
+}
   
-  .img {
+.img {
     background-color: $color4;
     width: 250px;
     height: 350px;
     padding: 20px;
-  }
+}
   
-  .footer {
+.footer {
     padding: 20px;
     text-align: center;
     background: $color3;
-  }
+}
   
-  @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .row {   
-      flex-direction: column;
+        flex-direction: column;
     }
-  }
+}
   
-  @media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
     .navbar a {
-      float: none;
-      width: 100%;
+        float: none;
+        width: 100%;
     }
-  }
+}
