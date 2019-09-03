@@ -20,10 +20,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: #333333;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+  background-color: #303030;
 }
 
 .navbar a {
@@ -44,27 +41,26 @@ body {
   color: black;
 }
 
-.navbar a.active {
-  background-color: #666666;
-  color: #fff;
-}
-
 .row {
   display: -ms-flexbox;
+  /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap;
+  /* IE10 */
   flex-wrap: wrap;
 }
 
 .side {
   -ms-flex: 30%;
+  /* IE10 */
   flex: 30%;
-  background: #f1f1f1;
+  background-color: #f1f1f1;
   padding: 20px;
 }
 
 .main {
   -ms-flex: 70%;
+  /* IE10 */
   flex: 70%;
   background-color: #fff;
   padding: 20px;
@@ -78,7 +74,7 @@ body {
 }
 
 .footer {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   background: #d0d0d0;
 }
